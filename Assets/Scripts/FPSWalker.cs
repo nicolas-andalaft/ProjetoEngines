@@ -8,12 +8,14 @@ public class FPSWalker : MonoBehaviour
     public float speed;
     public LayerMask layer;
     public float offset;
+    public static Vector3 floorPoint = Vector3.zero;
 
     private Rigidbody rb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void FixedUpdate()
@@ -37,6 +39,7 @@ public class FPSWalker : MonoBehaviour
 
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity, layer))
+            floorPoint = hit.point;
             posi.y = hit.point.y + offset;
 
         transform.position = new Vector3(transform.position.x, posi.y, transform.position.z);
