@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public float waveInterval;
     public float waveQtd;
     public GameObject enemyPrefab;
+    public AudioSource spawnSound;
     private float time;
 
     private void Start()
@@ -20,6 +21,7 @@ public class EnemySpawner : MonoBehaviour
         if (time >= waveInterval)
         {
             time = 0;
+            spawnSound.Play();
             for (int i = 0; i < waveQtd; i++)
             {
                 Instantiate(enemyPrefab, transform.position, transform.rotation);
