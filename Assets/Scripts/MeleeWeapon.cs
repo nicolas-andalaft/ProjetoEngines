@@ -9,8 +9,12 @@ public class MeleeWeapon : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.TryGetComponent(out EnemyAI component);
-            if (component)
-                component.TakeHit(damage);
+            component?.TakeHit(damage);
+        }
+        else if (other.gameObject.CompareTag("PuzzlePlataform"))
+        {
+            other.gameObject.TryGetComponent(out PuzzlePlataform plataform);
+            plataform?.ChangeState();
         }
     }
 }

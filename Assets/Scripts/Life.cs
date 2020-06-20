@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Life : MonoBehaviour
 {
+    public GameUI hud;
     [SerializeField]
     private float life;
 
@@ -15,6 +14,10 @@ public class Life : MonoBehaviour
     public void decreaseLife(float value)
     {
         life -= value;
-        if (life < 0) life = 0;
+        hud?.UpdateLife(life/1000);
+        if (life < 0 && gameObject.CompareTag("Player"))
+        {
+            hud.ShowGameOver();
+        }
     }
 }

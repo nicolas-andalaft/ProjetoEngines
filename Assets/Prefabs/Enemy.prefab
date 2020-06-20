@@ -4966,7 +4966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4554272337608494cb29934b96e92a04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPower: 10
+  attackPower: 200
   animation: {fileID: 2457218170094945946}
   state: 0
   deathParticles: {fileID: 6502244106409306491}
@@ -4985,6 +4985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c7777d19e37f14b97b6fb4984c60c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hud: {fileID: 0}
   life: 100
 --- !u!65 &1460344080182853281
 BoxCollider:

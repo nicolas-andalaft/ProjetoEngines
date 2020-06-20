@@ -84,6 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5327834650270114724}
   - component: {fileID: 5327834650270114725}
+  - component: {fileID: 1293011992550163203}
   m_Layer: 0
   m_Name: Camera System
   m_TagString: CameraSystem
@@ -99,7 +100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5327834650270114723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 370.12, y: 46.37, z: 373.16522}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5327834649742708591}
@@ -118,4 +119,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9620cd16467ee4f4ba3b639c6c9d8bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 8
+--- !u!81 &1293011992550163203
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327834650270114723}
+  m_Enabled: 1

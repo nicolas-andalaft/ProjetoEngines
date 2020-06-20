@@ -214,8 +214,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4948102524006636777}
   - component: {fileID: 4948102524006636775}
-  - component: {fileID: 4948102524006636773}
-  - component: {fileID: 4948102524006636774}
   - component: {fileID: 4948102524006636776}
   m_Layer: 0
   m_Name: Attack Collider
@@ -249,34 +247,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9410663, y: 2.4715767, z: 1.1493249}
-  m_Center: {x: 0, y: -0.8942661, z: 1.26}
---- !u!65 &4948102524006636773
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4948102524006636778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5442114, y: 2.4614792, z: 1.0814209}
-  m_Center: {x: -1.7321057, y: -0.91168594, z: 0.7650757}
---- !u!65 &4948102524006636774
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4948102524006636778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.53374386, y: 2.475399, z: 1.0719299}
-  m_Center: {x: 1.726872, y: -0.904726, z: 0.76982117}
+  m_Size: {x: 3.7852464, y: 2.4715767, z: 1.2636871}
+  m_Center: {x: 0, y: -0.8942661, z: 1.2028189}
 --- !u!114 &4948102524006636776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14887,11 +14859,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DogPolyart
-      objectReference: {fileID: 0}
-    - target: {fileID: 2066896392038628118, guid: 45288819fde2143449a96207b14db0bb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45288819fde2143449a96207b14db0bb, type: 3}
